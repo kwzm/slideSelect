@@ -1,5 +1,7 @@
 # slideSelect
 下滑展开单选/多选插件
+###效果图
+![img](https://raw.githubusercontent.com/kwzm/slideSelect/master/img/effectPicture1.jpg)
 ##使用方法
 - 1、引入文件
   - 引入jQuery
@@ -38,9 +40,10 @@
             }
 `  
 `var slideSelect1 = new kwzm.slideSelect($("#slideSelect1"), $("#expend-box1"), config);`  
+- 配置项
+  - datasource：数据源
+  - isMultiple
 
-###效果图
-![img](https://raw.githubusercontent.com/kwzm/slideSelect/master/img/effectPicture1.jpg)
 
 
 
