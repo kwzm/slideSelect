@@ -1,0 +1,7 @@
+﻿
+.slideSelect_box { display: none; border: 1px solid black; width: 400px; height: 50px; position:relative;}
+.slideSelect_box ul { list-style: none; }
+.slideSelect_box ul li { float: left; margin-right: 10px; }
+.slideSelect_box:after { content: ' '; display: block; clear: both; visibility: hidden; }
+.slideSelect_box .choosed { color: red; }
+.slideSelect_box .slideSelect_save{position:absolute;bottom:5px;right:5px; }

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>下滑展开选择框</title>
+    <script src="../script/jquery-1.8.3.min.js"></script>
+    <script src="slideSelect.js"></script>
+    <link href="slideSelect.css" rel="stylesheet" />
+</head>
+<body>
+    <span id="slideSelect1">点击展开1</span>
+    <span id="slideSelect2">点击展开2</span>
+    <span id="slideSelect3">点击展开3</span>
+    <span id="slideSelect4">点击展开4</span>
+    <span id="slideSelect5">点击展开5</span>
+    <span id="slideSelect6">点击展开6</span>
+    <button id="getResult">获取结果</button>
+    <div id="expend-box1"></div>
+    <div id="expend-box2"></div>
+    <div id="expend-box3"></div>
+    <div id="expend-box4"></div>
+    <div id="expend-box5"></div>
+    <div id="expend-box6"></div>
+
+    <script>
+        $(function () {
+            var sourceData = [{
+                name: "选项1",
+                value: "id1"
+            }, {
+                name: "选项2",
+                value: "id2"
+            }, {
+                name: "选项3",
+                value: "id3"
+            }, {
+                name: "选项4",
+                value: "id4"
+            }, {
+                name: "选项5",
+                value: "id5"
+            }];
+            var config = {
+                dataSource: sourceData,
+                isMultiple: false,
+                isShowMultiple:true,
+                buttonConfig: {
+                    text: "保存",
+                    onClick: function () {
+                        alert(slideSelect1.choosedData);
+                    }
+                }
+            }
+            var slideSelect1 = new kwzm.slideSelect($("#slideSelect1"), $("#expend-box1"), config);
+            var slideSelect2 = new kwzm.slideSelect($("#slideSelect2"), $("#expend-box2"), config);
+            var slideSelect3 = new kwzm.slideSelect($("#slideSelect3"), $("#expend-box3"), config);
+            var slideSelect4 = new kwzm.slideSelect($("#slideSelect4"), $("#expend-box4"), config);
+            var slideSelect5 = new kwzm.slideSelect($("#slideSelect5"), $("#expend-box5"), config);
+            var slideSelect6 = new kwzm.slideSelect($("#slideSelect6"), $("#expend-box6"), config);
+
+            $("#getResult").click(function () {
+                console.log(slideSelect1);
+            })
+        });
+    </script>
+</body>
+</html>
