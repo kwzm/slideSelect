@@ -40,7 +40,7 @@
 `var slideSelect1 = new kwzm.slideSelect($("#slideSelect1"), $("#expend-box1"), config);`  
 
 ###效果图
-
+![img](https://raw.githubusercontent.com/kwzm/slideSelect/master/img/effectPicture1.jpg)
 
 
 
