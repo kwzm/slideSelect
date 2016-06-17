@@ -42,7 +42,14 @@
 `var slideSelect1 = new kwzm.slideSelect($("#slideSelect1"), $("#expend-box1"), config);`  
 - 配置项
   - datasource：数据源
-  - isMultiple
+    - name：选项名称
+    - value：选项值
+  - isMultiple：是否是多选（默认值是true）
+  - isShowMultiple：是否展示多个展开框（默认值是false）
+  - buttonConfig：按钮配置
+    - text：按钮显示文本（默认值是“确定”）
+    - onclick：点击按钮执行的方法
+  
 
 
 
